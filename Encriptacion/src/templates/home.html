@@ -14,31 +14,57 @@
         <h1><center>Reyes López Kevin Isaac</center></h1>
         <h2><center>Encriptación</center></h2>
     </div>
-    <div class="grid">
+    <hr>
+    <center>
+        <div id="div-form" class="form-floating">
+            <form action="/enc" method="post">
+                <label for="dato">Ingrese datos</label>
+                <input type="text" name="dato" >
+    
+                <input id="boton" type="submit" value="Encriptar">
+            </form>
+        </div>
+        <div>
+            <script src="/Encriptacion/src/index.py"></script>
+        </div>
+    </center>
+    <!-- <div class="grid">
         <div id="section1">
             <div id="div-form" class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea">{{ dato }}</textarea>
-                <label for="floatingTextarea">Ingrese datos</label>
-                <button type="button" class="btn btn-dark">Encriptar</button>
+                <form action="/enc" method="post">
+                    <label for="dato">Ingrese datos</label>
+                    <input type="text" name="dato" >
+
+                    <input id="boton" type="submit" value="Encriptar">
+                </form>
             </div>
             <div id="resultado">
                <b>Resultado:</b>
-               <div id="box-r"></div>
+               <div id="box-r">
+                    <p>{{d_encriptado}}</p>
+               </div>
             </div>
         </div>
         <div id="section2">
             <div id="div-form" class="form-floating">
                 <b>Datos encriptados:</b>
-                <div id="box-r"></div>
+                <div id="box-r">
+                    <p>
+
+                    </p>
+                    {{d_encriptado}}
+                </div>
                 <button type="button" class="btn btn-dark">Desencriptar</button>
             </div>
             <div id="resultado">
                <b>Resultado:</b>
                <div id="box-r">
-                {{ d_encriptado }}
+                    <p>
+                        {{d_desencriptado_b}}
+                    </p>
                </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
